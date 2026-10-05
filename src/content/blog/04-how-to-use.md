@@ -1,7 +1,7 @@
 ---
-title: How to use this template
-description: A brief guide on the things you'll find in this template
-pubDate: 2025-01-19
+title: Comment utiliser ce modèle
+description: Un bref guide sur les choses que vous trouverez dans ce modèle
+pubDate: 2026-10-05
 tags:
   - astro
   - markdown
@@ -9,9 +9,9 @@ tags:
   - howto
 ---
 
-This post explains how to use the `smallworld` template.
+Cet article explique comment utiliser le modèle `Astro Pico`.
 
-## Quickstart
+## Démarrage rapide
 
 ```shell
 npm create astro@latest -- --template anaxite/astro-smallworld
@@ -20,64 +20,64 @@ npm run dev
 npm run build
 ```
 
-## How to use
+## Comment utiliser
 
-### Install
+### Installer
 
-1. Install Astro.
+1. Installez Astro.
 
 ```shell
 npm create astro@latest -- --template anaxite/astro-smallworld
 ```
 
-2. Install this template's dependencies, if you didn't already.
+2. Installez les dépendances de ce modèle, si vous ne l'avez pas déjà fait.
 
 ```shell
 cd <install-directory>
 npm install
 ```
 
-3. Run the template in preview mode, or build the final output.
+3. Exécutez le modèle en mode aperçu ou créez la sortie finale.
 
 ```shell
 npm run dev
 npm run build
 ```
 
-4. Optionally, format your source files with Prettier.
+4. En option, formatez vos fichiers sources avec Prettier.
 
 ```shell
 npm run format
 ```
 
-If you use mise-en-place for your tooling, this project comes with a mise configuration file.
+Si vous utilisez mise en place pour vos outils, ce projet est livré avec un fichier de configuration mise.
 
-### Configure site settings
+### Configurer les paramètres du site
 
-Site-wide settings are stored in `src/settings.ts`. This is also where you can set the favicon file name, and Open Graph image settings.
+Les paramètres à l'échelle du site sont stockés dans `src/settings.ts`. C'est également là que vous pouvez définir le nom du fichier favicon et les paramètres de l'image Open Graph.
 
-### Configure CSS
+### Configurer le CSS
 
-The file `src/styles/main.scss` controls which CSS elements Pico CSS includes in the final site. See [the Pico CSS website](https://picocss.com/docs/sass) for information about these elements.
+Le fichier `src/styles/main.scss` contrôle les éléments CSS que Pico CSS inclut dans le site final. Voir [le site Web Pico CSS](https://picocss.com/docs/sass) pour plus d'informations sur ces éléments.
 
-> Building your project may show deprecation warnings due to how Pico CSS writes its SASS files. These warnings are non-fatal and can be ignored for now..
+> La construction de votre projet peut afficher des avertissements de dépréciation en raison de la façon dont Pico CSS écrit ses fichiers SASS. Ces avertissements ne sont pas mortels et peuvent être ignorés pour l'instant.
 
-### Add and edit pages
+### Ajouter et modifier des pages
 
-Create your static pages as `.astro` files under `src/pages`. The template includes an index page with the most recent blog posts, an About page, and a 404 page.
+Créez vos pages statiques en tant que fichiers `.astro` sous `src/pages`. Le modèle comprend une page d'index avec les articles de blog les plus récents, une page À propos et une page 404.
 
-Use the Base layout to wrap your content in semantically-correct `<main>` tags. The Base layout also takes `title` and `description` attributes that supplement the main site title and description. If you want your content to have a nice border, I recommend you wrap it in `<article>` tags to benefit from Pico CSS styling.
+Utilisez la mise en page de base pour envelopper votre contenu dans des balises `<main>` sémantiquement correctes. La mise en page de base prend également les attributs `title` et `description` qui complètent le titre et la description du site principal. Si vous voulez que votre contenu ait une belle bordure, je vous recommande de l'envelopper dans des balises `<article>` pour bénéficier du style Pico CSS.
 
-To start with a basic page template, see the file in `src/templates`.
+Pour commencer avec un modèle de page de base, consultez le fichier dans `src/templates`.
 
 ### Navigation
 
-To add a page to the site navigation, edit the `PageHeader.astro` component directly.
+Pour ajouter une page à la navigation du site, modifiez directement le composant `PageHeader.astro`.
 
 ### Blog
 
-smallworld comes with a blog collection by default. To add a new post, create a Markdown file in the `src/content/blog` directory or one of its subdirectories. The path and file name becomes the post URL.
+Smallworld est livré avec une collection de blogs par défaut. Pour ajouter un nouveau message, créez un fichier Markdown dans le répertoire `src/content/blog` ou dans l'un de ses sous-répertoires. Le chemin et le nom du fichier deviennent l'URL de la publication.
 
-A post must have `title`, `description` and `pubDate` keywords in its frontmatter. `tags` are optional.
+Un message doit avoir les mots-clés `title`, `description` et `pubDate` dans son frontmatter. `tags` sont facultatifs.
 
-To see a post template, see the file in `src/templates`.
+Pour voir un modèle de publication, consultez le fichier dans `src/templates`.
