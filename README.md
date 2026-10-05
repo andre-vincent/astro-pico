@@ -1,18 +1,18 @@
-# smallworld
+# Petit monde
+_Ceci est un modèle pour le générateur de site statique [Astro](https://astro.build/). Maintenant mis à jour pour Astro 6 ! _
 
-_This is a template for the static site generator [Astro](https://astro.build/). Now updated for Astro 6!_
+J'aime Astro, mais je n'aime pas passer des heures à personnaliser les styles. J'ai créé ce modèle sur la base de quelques principes clés :
 
-I like Astro, but I don't like spending hours customizing styles. I made this template based on a few key principles:
+- Je veux un site Web basique avec un blog d'un seul auteur.
+- Le site Web doit inclure des éléments accessibles et utilisables.
+- Évitez les systèmes complexes, préférez les systèmes plus simples.
+- Les choses que je vois devraient être faciles à comprendre.
 
-- I want a basic website with a single-author blog.
-- The website should incorporate accessible and usable elements.
-- Avoid complex systems, prefer simpler ones.
-- Things I see should be easy to understand.
+Le résultat est un modèle Astro qui utilise à peine des classes CSS et maximise l'utilisation du HTML sémantique.
 
-The result is an Astro template that barely uses CSS classes, and maximizes the use of semantic HTML.
-It not only makes for a functional site, but is also great to start learning how Astro works!
+Ce n'est pas seulement un site fonctionnel, mais c'est aussi génial de commencer à apprendre comment fonctionne Astro !
 
-## Quickstart
+## Démarrage rapide
 
 ```shell
 npm create astro@latest -- --template anaxite/astro-smallworld
@@ -21,73 +21,73 @@ npm run dev
 npm run build
 ```
 
-## Less quick start
+## Démarrage moins rapide
 
-### Install
+### Installer
 
-1. Install Astro:
+1. Installer Astro :
 
 ```shell
 npm create astro@latest -- --template anaxite/astro-smallworld
 ```
 
-2. Install this template's dependencies, if you didn't already:
+2. Installez les dépendances de ce modèle, si vous ne l'avez pas déjà fait :
 
 ```shell
 cd <install-directory>
 npm install
 ```
 
-3. Run the template in preview mode, or build the final output.
+3. Exécutez le modèle en mode aperçu ou créez la sortie finale.
 
 ```shell
 npm run dev
 npm run build
 ```
 
-4. Optionally, format your source files with Prettier.
+4. En option, formatez vos fichiers sources avec Prettier.
 
 ```shell
 npm run format
 ```
 
-### Configure site settings
+### Configurer les paramètres du site
 
-Site-wide settings are stored in `src/settings.ts`. This is also where you can set the favicon file name, and Open Graph image settings.
+Les paramètres à l'échelle du site sont stockés dans `src/settings.ts`. C'est également là que vous pouvez définir le nom du fichier favicon et les paramètres de l'image Open Graph.
 
-### Configure CSS
+### Configurer le CSS
 
-The file `src/styles/main.scss` controls which CSS elements Pico CSS includes in the final site. See [the Pico CSS website](https://picocss.com/docs/sass) for information about these elements. 
+Le fichier `src/styles/main.scss` contrôle les éléments CSS que Pico CSS inclut dans le site final. Voir [le site Web Pico CSS](https://picocss.com/docs/sass) pour plus d'informations sur ces éléments.
 
-> A site build may show Pico CSS warnings. These warnings are generally non-fatal and can be ignored. 
+> Une construction de site peut afficher des avertissements Pico CSS. Ces avertissements sont généralement non mortels et peuvent être ignorés.
 
-### Add and edit pages
+### Ajouter et modifier des pages
 
-Create your static pages as `.astro` files under `src/pages`. The template includes an index page with the most recent blog posts, an About page, and a 404 page.
+Créez vos pages statiques en tant que fichiers `.astro` sous `src/pages`. Le modèle comprend une page d'index avec les articles de blog les plus récents, une page À propos et une page 404.
 
-Use the Base layout to wrap your content in semantically-correct `<main>` tags. The Base layout also takes `title` and `description` attributes that supplement the main site title and description. If you want your content to have a nice border, I recommend you wrap it in `<article>` tags to benefit from Pico CSS styling.
+Utilisez la mise en page de base pour envelopper votre contenu dans des balises `<main>` sémantiquement correctes. La mise en page de base prend également les attributs `title` et `description` qui complètent le titre et la description du site principal. Si vous voulez que votre contenu ait une belle bordure, je vous recommande de l'envelopper dans des balises `<article>` pour bénéficier du style Pico CSS.
 
-To start with a basic page template, see the file in `src/templates`.
+Pour commencer avec un modèle de page de base, consultez le fichier dans `src/templates`.
 
-### Edit navigation
+### Modifier la navigation
 
-To add a page to the site navigation, edit the `PageHeader.astro` component directly.
+Pour ajouter une page à la navigation du site, modifiez directement le composant `PageHeader.astro`.
 
 ### Blog
 
-smallworld comes with a blog collection by default. To add a new post, create a Markdown file in the `src/content/blog` directory or one of its subdirectories. The path and file name becomes the post URL.
+Smallworld est livré avec une collection de blogs par défaut. Pour ajouter un nouveau message, créez un fichier Markdown dans le répertoire `src/content/blog` ou dans l'un de ses sous-répertoires. Le chemin et le nom du fichier deviennent l'URL de la publication.
 
-A post must have `title`, `description` and `pubDate` keywords in its frontmatter. `tags` are optional.
+Un message doit avoir les mots-clés `title`, `description` et `pubDate` dans son frontmatter. `tags` sont facultatifs.
 
-To see a post template, see the file in `src/templates`.
+Pour voir un modèle de publication, consultez le fichier dans `src/templates`.
 
 ## Notes
 
-For your convenience, I added a few tooling things:
+Pour votre commodité, j'ai ajouté quelques outils :
 
-- Any Node.js package manager supported by Astro should work. I include a bit of PNPM config by default.
-- This project comes with a `mise-en-place` configuration file.
+- Tout gestionnaire de paquets Node.js pris en charge par Astro devrait fonctionner. J'inclus un peu de configuration PNPM par défaut.
+- Ce projet est livré avec un fichier de configuration `mise en place`.
 
-## About Astro
+## À propos d'Astro
 
-Want to learn more about Astro? Check out [their documentation](https://docs.astro.build) or jump into their [Discord server](https://astro.build/chat).
+Vous voulez en savoir plus sur Astro ? Consultez [leur documentation](https://docs.astro.build) ou sautez sur leur [serveur Discord](https://astro.build/chat).
